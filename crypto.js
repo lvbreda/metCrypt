@@ -5,7 +5,7 @@ Meteor.hash = function(method, data) {
  if(method=="sha256"){return  SHA256(s);}
  return data;
 };
-//Webtoolkit
+
 function md5(string){
 	function RotateLeft(lValue, iShiftBits) {
 		return (lValue<<iShiftBits) | (lValue>>>(32-iShiftBits));
@@ -205,12 +205,7 @@ function md5(string){
  
 	return temp.toLowerCase();
 }
-/**
-*
-*  Secure Hash Algorithm (SHA1)
-*  http://www.webtoolkit.info/
-*
-**/
+
  
 function SHA1 (msg) {
  
@@ -379,14 +374,6 @@ function SHA1 (msg) {
 	return temp.toLowerCase();
  
 }
-/**
-*
-*  Secure Hash Algorithm (SHA256)
-*  http://www.webtoolkit.info/
-*
-*  Original code by Angel Marin, Paul Johnston.
-*
-**/
  
 function SHA256(s){
  
